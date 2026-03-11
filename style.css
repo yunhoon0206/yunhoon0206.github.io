@@ -173,6 +173,31 @@ header h1 {
     color: var(--primary-color);
 }
 
+/* Experience */
+.experience-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.experience-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.experience-list .date {
+    width: 150px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.experience-list .text {
+    flex: 1;
+    font-weight: 600;
+}
+
 /* Portfolio */
 .portfolio-grid {
     display: grid;
@@ -187,6 +212,12 @@ header h1 {
     box-shadow: 0 15px 45px rgba(0,0,0,0.08);
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
 }
 
 .portfolio-info {
@@ -254,6 +285,13 @@ footer {
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.25rem;
+    }
+    .experience-list li {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .experience-list .date {
+        width: auto;
     }
     .portfolio-grid {
         grid-template-columns: 1fr;
