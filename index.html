@@ -1,98 +1,119 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>윤훈의 이력서</title>
-        <style>
-            .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서 | 포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">RESUME</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#awards">Awards</a></li>
+            </ul>
+        </div>
+    </nav>
 
-.profile-img {
-    width: 150px; /* 이미지의 너비 */
-    height: 150px; /* 이미지의 높이 */
-    margin-right: 20px; /* 이미지와 이력서 내용 사이의 간격 */
-    border-radius: 50%; /* 이미지를 원형으로 만듦 */
-}
-             body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            background: linear-gradient(to right, #74ebd5, #acb6e5);
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #444;
-        }
-        p {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .section {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eaeaea;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        header h1 {
-            margin: 0;
-            color: #333;
-        }
-        header p {
-            margin: 10px 0 0;
-            color: #666;
-        }
-            </style>
-        </head>
-        <body>
-          
-            <div class="container">
-                <header class="section">
-                    <img src="https://dh.aks.ac.kr/Edu/wiki/images/b/b7/%ED%95%91%EA%B5%AC.jpg" alt="프로필 사진" class="profile-img">
-                    <h1>윤훈의 이력서</h1>
-                    <p>이메일: gns6088@dongyang.ac.kr| 전화번호: 010-2725-6088</p>
-                </header>
-                <section class="section">
-                    <h2>개인 정보</h2>
-                    <p>이름: 윤훈 | Yun Hoon</p>
-                    <p>주소: 대림동</p>
-                    <p>생년월일: 2001년 2월 6일</p>
-                </section>
-                <section class="section">
-                    <h2>협력개발 경험</h2>
-                    <p>html 활용 웹페이지 제작</p>
-                </section>
-                <section class="section">
-                    <h2>학력</h2>
-                    <p>동양미래대학교 컴퓨터공학부 컴퓨터소프트웨어공학과 (2024~재학(2027년 졸업예정))</p>
-                </section>
-                
-                <section class="section">
-                    <h2>기술 스택</h2>
-                    <p>언어: c++,Python</p>
-                    <p>도구: Git, slack, notion</p>
-                </section>
-                <section class="section">
-                    <h2>관심 기술분야</h2>
-                    <p>게임 개발<p>
-                    <p>데이터 분석<p>
-
-                </section>
+    <header id="about">
+        <div class="container">
+            <div class="header-content">
+                <h1>안녕하세요, 개발자 <span class="highlight">윤훈</span>입니다.</h1>
+                <p class="subtitle">효율적인 솔루션을 고민하고 시각적인 완성도를 지향하는 개발자입니다.</p>
+                <div class="contact">
+                    <span><i class="fas fa-envelope"></i> dbsgn@example.com</span>
+                    <span><i class="fab fa-github"></i> <a href="https://github.com/syjung64">github.com/syjung64</a></span>
+                </div>
             </div>
-        </body>
+        </div>
+    </header>
 
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <p>Java, C#, C++, C, Python, SQL, JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-globe"></i> Web Development</h3>
+                    <p>React, Vite, JSP, Servlet, HTML5, CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-gamepad"></i> Game Engine</h3>
+                    <p>Unity</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-video"></i> Multimedia</h3>
+                    <p>Adobe Premiere Pro, After Effects</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-database"></i> Database & Tools</h3>
+                    <p>MySQL, Git, Linux, Visual Studio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section gray-bg">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="empty-state">준비 중인 경력 사항이 없습니다.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-info">
+                        <h3>FoodPage</h3>
+                        <p class="tag">Java Servlet / JSP / MVC / MySQL</p>
+                        <p class="description">
+                            사용자 맞춤형 레시피 추천 및 스마트 냉장고 관리를 포함하는 종합 푸드 플랫폼입니다. 
+                            식품안전나라 API를 파싱하여 조리 시간 추정 알고리즘을 구현하였으며, 
+                            Kakao Local 및 ODsay API를 연동하여 마트 탐색 및 최적 경로 안내 기능을 제공합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-info">
+                        <h3>food-and-nutrition-calculator</h3>
+                        <p class="tag">JavaScript / React</p>
+                        <p class="description">
+                            음식의 영양 성분을 분석하고 섭취량을 계산하는 도구입니다. 
+                            사용자가 입력한 식단 데이터를 기반으로 탄수화물, 단백질, 지방 등 필수 영양소 비율을 시각화하고 
+                            일일 권장량 대비 섭취 현황을 체계적으로 관리할 수 있도록 돕습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="awards" class="section gray-bg">
+        <div class="container">
+            <h2 class="section-title">Awards & Certifications</h2>
+            <ul class="awards-list">
+                <li>
+                    <span class="date">2025.11</span>
+                    <span class="text">정보처리산업기사</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 윤훈. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
